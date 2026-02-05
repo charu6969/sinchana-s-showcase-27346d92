@@ -2,20 +2,20 @@
  
  const skillCategories = [
    {
-     title: "Communication",
-     skills: ["Public Speaking", "Written Communication", "Presentation Skills", "Interpersonal Skills"],
+    title: "Programming Languages",
+    skills: ["C", "C++", "Python", "HTML", "JavaScript"],
    },
    {
-     title: "Leadership",
-     skills: ["Team Management", "Event Coordination", "Project Planning", "Decision Making"],
+    title: "AI & Data",
+    skills: ["Machine Learning", "Data Science", "Data Structures"],
    },
    {
-     title: "Technical",
-     skills: ["Microsoft Office", "Social Media Management", "Content Creation", "Data Analysis"],
+    title: "Infrastructure",
+    skills: ["Cloud Services", "Operating Systems"],
    },
    {
-     title: "Soft Skills",
-     skills: ["Problem Solving", "Time Management", "Adaptability", "Collaboration"],
+    title: "Soft Skills",
+    skills: ["Leadership", "Public Relations", "Team Coordination", "Problem Solving"],
    },
  ];
  

@@ -1,25 +1,30 @@
  import { motion } from "framer-motion";
- import { ExternalLink, Folder } from "lucide-react";
- import { Button } from "@/components/ui/button";
+import { Folder, Trophy, Cloud, Database } from "lucide-react";
  
  const projects = [
    {
-     title: "Campus Event Management",
-     description: "Led the planning and coordination of college cultural events, managing a team of volunteers and ensuring successful execution.",
-     tags: ["Event Planning", "Team Leadership", "Coordination"],
+    title: "UPI Fraud Detection System",
+    description: "Real-time hybrid ML system combining rule-based analysis, anomaly detection, and graph risk analysis to identify fraudulent transactions.",
+    tags: ["Python", "PyTorch", "Graph ML", "Real-time"],
      color: "from-pink-500 to-rose-500",
+    icon: Trophy,
+    badge: "🏆 1st Place - Ashtrang Hackathon",
    },
    {
-     title: "Community Outreach Initiative",
-     description: "Organized community service programs through Project ReachOut, impacting local communities in Mysore.",
-     tags: ["Volunteering", "Community Service", "Social Impact"],
+    title: "Cloud Online Book Store",
+    description: "A cloud-based e-commerce platform for books with user authentication, cart management, and secure payment integration.",
+    tags: ["Cloud Services", "Web Development", "Database"],
      color: "from-blue-500 to-cyan-500",
+    icon: Cloud,
+    badge: null,
    },
    {
-     title: "Public Relations Campaign",
-     description: "Developed and executed PR strategies for Persona+ SJCE, enhancing the organization's visibility and engagement.",
-     tags: ["PR Strategy", "Content Creation", "Branding"],
+    title: "Games & Movies Management",
+    description: "A comprehensive DBMS project for managing games and movies inventory with CRUD operations, search functionality, and reporting.",
+    tags: ["DBMS", "SQL", "Backend"],
      color: "from-violet-500 to-purple-500",
+    icon: Database,
+    badge: null,
    },
  ];
  
@@ -54,9 +59,15 @@
                <div className={`h-2 bg-gradient-to-r ${project.color}`} />
                
                <div className="p-6">
+                {project.badge && (
+                  <div className="mb-4 inline-block px-3 py-1 bg-accent/20 text-primary rounded-full text-xs font-semibold border border-primary/30">
+                    {project.badge}
+                  </div>
+                )}
+                
                  <div className="flex items-start justify-between mb-4">
                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                     <Folder className="w-6 h-6 text-primary" />
+                    <project.icon className="w-6 h-6 text-primary" />
                    </div>
                  </div>
  

@@ -9,13 +9,6 @@
      duration: "2023 - 2027 (Expected)",
      description: "Pursuing undergraduate degree with focus on engineering and technology.",
    },
-   {
-     degree: "Pre-University Education",
-     institution: "PU College",
-     location: "Karnataka, India",
-     duration: "2021 - 2023",
-     description: "Completed higher secondary education with science stream.",
-   },
  ];
  
  const Education = () => {
